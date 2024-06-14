@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.doctor-info {
+     width: 700px;
+}
+.bold{
+    color: orange;
+}
+
+.doctor-info h1 {
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.doctor-image {
+     width: 300px;
+     height: 330px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+     bottom: 70px;
+}
+
+.doctor-image img {
+    width: 100%;
+    display: block;
+}
+
+.doctor-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.doctor-details p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.doctor-details span {
+    font-size: 16px;
+}
+
+.about-social-icons {
+position: absolute;
+top: 10px; /* Adjust as needed */
+right: 10px; /* Adjust as needed */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+padding: 5px;
+transition: opacity 0.3s ease;
+z-index: 3;
+opacity: 0;
+}
+
+.about-social-icons a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+margin: 5px;
+color: #333;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.about-social-icons a:hover {
+background-color: rgba(255, 255, 255, 0.412);
+}
+
+.doctor-image:hover .about-social-icons {
+opacity: 1;
+}
+
+.share-icon {
+position: absolute;
+bottom: 100px; /* Adjust as needed */
+right: 20px; /* Adjust as needed */
+background-color: whitesmoke;
+border-radius: 50%;
+padding: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-size: 1.4rem;
+}
+
+/* //next section style */
+
+.about-section {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 15px;
+overflow: hidden; /* To prevent image overflow */
+}
+.doctor-container{
+max-width: 1200px;
+margin: auto;
+}
+
+.text-section {
+flex: 1;
+margin-right: 20px;
+}
+
+.text-section p {
+font-size: 1.2rem;
+
+line-height: 1.6;
+}
+
+.image-section img {
+width: 700px;
+height: auto;
+position: relative;
+bottom: 30px;
+}
+
+/* center-text style */
+.center-text{
+padding: 20px;
+
+}
+.text-content{
+max-width: 1100px;
+padding: 20px;
+margin: 10px auto;
+}
+.text-content p{
+font-size: 1.2rem;
+line-height: 1.6;
+}
+
+
+/* //career-highlights style  */
+
+.career-container {
+    padding: 20px;
+}
+.mid-conatiner{
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.career-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.highlight-item .icon {
+    color: orange;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.highlight-item p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.highlight-item p .bold {
+    font-weight: bold;
+}
+
+/* ACHIEVEMENTS & CONTRIBUTIONS style  css*/
+.container-ACHIEVEMENTS {
+max-width: 1150px;
+margin:auto;
+padding: 0 20px;
+}
+
+h1 {
+text-align: left;
+font-size: 25px;
+margin-bottom: 30px;
+}
+
+.faq {
+margin-bottom: 15px;
+border-bottom: 1px solid #ccc;
+padding-bottom: 10px;
+}
+
+.faq h2 {
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 20px;
+margin: 0;
+padding: 10px 0;
+}
+
+.faq h2 i {
+transition: transform 0.3s;
+}
+
+.faq ul {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s ease;
+list-style-type: disc;
+padding-left: 20px;
+margin: 10px 0 0 0;
+}
+
+.faq.active ul {
+max-height: 1000px; /* Adjust this value based on the expected maximum height of the content */
+}
+
+.faq ul li {
+margin-bottom: 10px;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.faq ul h3 {
+margin-top: 20px;
+font-size: 18px;
+font-weight: bold;
+}
+
+.faq ul li::marker {
+color: black; /* Change bullet point color if needed */
+}
+
+.faq ul li h3 {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+
+/* media query  */
+
+@media (max-width: 768px) {
+.section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor-image {
+    margin-bottom: 20px;
+    bottom: 0;
+}
+.section .doctor-info{
+    padding: 12px;
+   
+}
+
+.doctor-info {
+    width: 100%;
+    text-align: left;
+}
+
+.doctor-info h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.doctor-info p {
+    font-size: 1.4rem;
+}
+
+.doctor-details p {
+    font-size: 1.2rem;
+}
+/* //about-section media query */
+.about-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-section {
+    margin-right: 0;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.4rem; /* Font size for mobile devices */
+}
+
+.image-section img{
+width: 100%;
+position: relative;
+ top: 0px;
+}
+
+/* center-text media query style*/
+.center-text{
+text-align: left;
+}
+.text-content p {
+    font-size: 1.4rem; /* Font size for mobile devices */
+    text-align: left;
+    justify-items: center;
+    line-height: 1.6;
+}
+.text-content{
+ width: 100%;
+ position: relative;
+ bottom: 25px;
+         }
+
+
+/* carrer highlight style */
+.career-title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .highlight-item p {
+        font-size: 1.1rem;
+    }
+
+    .highlight-item .icon {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* <!-- operating rooms text start css --> */
+
+
+
+.outer-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    /* Set width to 50% of the parent container */
+    padding: 10px;
+    margin: auto;
+}
+
+  h1 {
+    font-size: 2rem;
+  }
+
+
+  
+  .inner-div h5,h6 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 5px;
+}
+
+.container-1 .box1 {
+    width: 400px;
+    height: 300px;
+    background-color: ghostwhite;
+    border: 1px dotted gray;
+}
+
+.box1 .places-time {
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.places,
+.time1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* Adjust font size as needed */
+    text-align: center;
+    /* Keep the text centered */
+}
+
+
+.option {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.option a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    /* Add padding to the anchor tags */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.option a:hover {
+    color: blue;
+}
+
+.option span {
+    display: inline-block;
+    vertical-align: middle;
+    /* Align span vertically */
+}
+
+.map-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Center text horizontally */
+
+}
+
+.map-tag a {
+    text-decoration: none;
+    color: orange;
+    padding: 0px;
+    font-size: 3rem;
+}
+
+.map-tag a:hover {
+    color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+    .outer-div {
+        width: 100%;
+    }
+
+    .inner-div {
+        max-width: 100%;
+    }
+
+    .inner-div h1 {
+        font-size: 30px;
+        padding: 15px;
+        text-align: left;
+    }
+    .container-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+    .container-1 .box1 {
+        width: 100%;
+    }
+
+    .map-tag {
+        position: relative;
+        /* Reset position to relative */
+        bottom: 25px;
+    }
+
+}

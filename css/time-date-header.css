@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   /* Adjust padding as needed */
+    /* Adjust background color as needed */
+  
+  }
+  
+  /* Address */
+  .address {
+    flex: 1; /* Take up remaining space */
+    background-color: #f2f2f2; /* Adjust color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* Adjust margin to create gap */
+    background-color: orange;
+  }
+  
+  /* Time */
+  .time {
+    flex: 1; /* Take up remaining space */
+    text-align: right; /* Align time to the right */
+    background-color: #e6e6e6; /* Adjust color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent line break */
+    background-color: black;
+    color: white;
+  }
+  
+  
+  /* Icon */
+  .icon {
+    margin-right: 5px; /* Adjust margin as needed */
+    padding: 5 5px; /* Add padding to the icon */
+  }
+  .place{
+    font-size: 1rem;
+    font-weight: 0px;
+  }
+
+  @media screen and (max-width: 768px){
+    .address-container{
+      display: none;
+    }
+  }

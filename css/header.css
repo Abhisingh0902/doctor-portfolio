@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-color:white;/* Adjust as needed */
+    padding:0px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    
+    }
+    
+    .header .logo {
+    margin-right: 20px; /* Adjust margin between logo and contact info */
+    width:120px;
+    padding: 5px;
+    
+    
+    }
+    
+    .header .logo img {
+    width: 100%; /* Adjust logo height as needed */
+    
+    
+    
+    }
+    
+    .contact-info {
+    display: flex;
+    align-items: center;
+    }
+    
+    .contact-info > div {
+    margin-right: 20px; /* Adjust margin between contact info items */
+    }
+    
+    .contact-info > div:last-child {
+    margin-right: 0;
+    }
+    
+    .phone p,
+    .email p {
+    font-size: 15px;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 0; /* Remove default bottom margin */
+    font-weight: bold; /* Make phone and email text bold */
+    }
+    
+    .divider {
+    border-left: 1px solid #ccc;
+    height: 20px;
+    margin: 0 20px; /* Adjust margin between divider and contact info */
+    }
+    
+    .social-media {
+    display: flex;
+    padding: 12px;
+    }
+    
+    .social-media a {
+    color: #333; /* Adjust social media icon color */
+    text-decoration: none;
+    margin-left: 20px; /* Adjust margin between social media icons */
+    font-size: 20px; /* Increase font size of social media icons */
+    border-radius: 50%; /* Apply border-radius to social media icons */
+    background-color: rgba(128, 128, 128, 0.43);
+    padding: 10px;
+    }
+    
+    .social-media a:first-child {
+    margin-left: 0; /* Remove margin from first social media icon */
+    }
+    
+    .social-media a:hover {
+    background-color: gray; /* Adjust social media icon hover color */
+    font-weight: bold; /* Make social media icon bold on hover */
+    }
+
+    @media screen and (max-width: 768px)
+    {
+
+        .header{
+            width: 100%;
+            flex-direction: column;
+        
+        }
+        .header .logo{
+            width: 150px;
+            position: relative;
+            left: 10px;
+        }
+        .contact-info{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+        text-align: center;
+        }
+        
+        .address-container{
+            display: none;
+        }
+        .divider{
+            display: none;
+        }
+        .email{
+            display: none;
+        
+        }
+        .phone{
+            display: none;
+        }
+        .social-media {
+            text-align: center;
+            padding: 12px;
+            /* position: relative;
+            right: 10px;
+            top: 5px; */
+        
+            
+        }
+        .social-media a{
+            font-size: 20px;
+        
+        }
+
+    }
+    
