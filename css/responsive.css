@@ -534,4 +534,16 @@
 
 /* static banner end */
 
-
+/* ************************************* Nav bar in mobie destep views    *******************/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .op-navbar li a {
+    padding: 2px;
+    font-size: 12px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1221px) {
+    .op-navbar li a {
+    padding: 12px;
+    font-size: 14px;
+    }
+}
