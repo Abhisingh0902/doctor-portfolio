@@ -548,6 +548,10 @@
         font-size: 11px;
         padding: 20px 5px;
     }
+    .our-services-section ul{
+        margin: 2px;
+        width: 160px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
