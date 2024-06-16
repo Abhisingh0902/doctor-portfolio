@@ -276,18 +276,3 @@ document.addEventListener('DOMContentLoaded', function() {
    
 // faq dropdown of about doctor page end.
 
-
-// whatsapp icon png js function start
-
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  var whatsappLink = document.getElementById('whatsapp-link');
-
-  if (isMobile) {
-    // Mobile device, use whatsapp:// link
-    whatsappLink.href = "whatsapp://send?phone=+916200577751";
-  } else {
-    // Not a mobile device, use https://wa.me/ link
-    whatsappLink.href = "https://wa.me/6200577751";
-  }
-
- // whatsapp icon png js function end
