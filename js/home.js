@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     } else {
-        console.error("Gallery elements not found");
+        // console.error("Gallery elements not found");
     }
 });
 
@@ -273,13 +273,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // faq dropdown of about doctor page start
 
-   
-        document.querySelectorAll('.faq h2').forEach(item => {
-            item.addEventListener('click', event => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
-            });
-        });
    
 // faq dropdown of about doctor page end.
 
