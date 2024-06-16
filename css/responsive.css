@@ -568,6 +568,9 @@
     .contact-form-info{
         height: 565px;
     }
+    .info-item{
+        padding: 1px 9px;
+    }
     
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
@@ -586,5 +589,8 @@
     }
     .contact-form-info{
         height: 565px;
+    }
+    .info-item{
+        padding: 1px 9px;
     }
 }
