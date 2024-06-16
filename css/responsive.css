@@ -552,6 +552,9 @@
         margin: 2px;
         width: 160px;
     }
+    .social-media-section{
+        width: 75%;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
