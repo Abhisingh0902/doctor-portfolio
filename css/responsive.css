@@ -565,6 +565,9 @@
     .doctor-info2{
         width: 60%;
     }
+    .contact-form-info{
+        height: 565px;
+    }
     
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
