@@ -284,7 +284,7 @@ var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   if (isMobile) {
     // Mobile device, use whatsapp:// link
-    whatsappLink.href = "https://wa.me/qr/LJDB77DKQGWRD1";
+    whatsappLink.href = "whatsapp://send?phone=+916200577751";
   } else {
     // Not a mobile device, use https://wa.me/ link
     whatsappLink.href = "https://wa.me/6200577751";
