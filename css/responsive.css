@@ -542,9 +542,11 @@
     }
     .time-content{
         font-size: 12px;
+        padding: 20px 0px;
     }
     .address-content{
-        font-size: 12px;
+        font-size: 11px;
+        padding: 20px 5px;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
