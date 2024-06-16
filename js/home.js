@@ -52,9 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
 // sticky navbar
 
 window.onscroll = function() {makeSticky()};
@@ -219,53 +216,58 @@ document.querySelectorAll('.dropdown').forEach(link => {
 
 
 //testimonils card slider
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.testimonial-slider');
+    const cards = document.querySelectorAll('.testimonial-slider .card');
+    const prevBtn = document.querySelector('.testimonial-prev');
+    const nextBtn = document.querySelector('.testimonial-next');
 
-let slider = document.querySelector('.testimonial-slider');
-let cards = document.querySelectorAll('.card');
-let currentIndex = 0;
-let cardWidth = cards[0].offsetWidth + 20; // Adding margin
-let visibleCards = Math.floor(slider.offsetWidth / cardWidth);
-let intervalId;
+    // Check if elements exist before proceeding
+    if (slider && cards.length > 0 && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        let cardWidth = cards[0].offsetWidth + 20; // Adding margin
+        let visibleCards = Math.floor(slider.offsetWidth / cardWidth);
+        let intervalId;
 
-function moveSlider(direction) {
-  const maxIndex = cards.length - visibleCards;
-  currentIndex = (currentIndex + direction) % maxIndex;
-  currentIndex = currentIndex < 0 ? maxIndex : currentIndex;
+        function moveSlider(direction) {
+            const maxIndex = cards.length - visibleCards;
+            currentIndex = (currentIndex + direction) % (maxIndex + 1);
+            currentIndex = currentIndex < 0 ? maxIndex : currentIndex;
 
-  let behavior = 'smooth';
-  let duration = 1000; // Default duration in milliseconds
+            slider.scrollTo({
+                left: cardWidth * currentIndex,
+                behavior: 'smooth'
+            });
+        }
 
-  // Reduce duration for previous movement
-  if (direction === -1) {
-    duration = 2000; // Adjust as needed for slower movement
-  }
+        function startAutoSlide() {
+            intervalId = setInterval(function() {
+                moveSlider(1);
+            }, 5000); // Change the interval as needed (milliseconds)
+        }
 
-  slider.scrollTo({
-    left: cardWidth * currentIndex,
-    behavior: behavior,
-    duration: duration
-  });
-}
+        function stopAutoSlide() {
+            clearInterval(intervalId);
+        }
 
-function startAutoSlide() {
-  intervalId = setInterval(function() {
-    moveSlider(1);
-  }, 5000); // Change the interval as needed (milliseconds)
-}
+        // Start auto sliding when page loads
+        startAutoSlide();
 
-function stopAutoSlide() {
-  clearInterval(intervalId);
-}
+        // Stop auto sliding when mouse hovers over the slider
+        slider.addEventListener('mouseenter', stopAutoSlide);
 
-// Start auto sliding when page loads
-startAutoSlide();
+        // Resume auto sliding when mouse leaves the slider
+        slider.addEventListener('mouseleave', startAutoSlide);
 
-// Stop auto sliding when mouse hovers over the slider
-slider.addEventListener('mouseenter', stopAutoSlide);
+        // Previous button click event
+        prevBtn.addEventListener('click', () => moveSlider(-1));
 
-// Resume auto sliding when mouse leaves the slider
-slider.addEventListener('mouseleave', startAutoSlide);
-
+        // Next button click event
+        nextBtn.addEventListener('click', () => moveSlider(1));
+    } else {
+        console.log("Testimonial slider elements not found on this page.");
+    }
+});
 // end
 
 
