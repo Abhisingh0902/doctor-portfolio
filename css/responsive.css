@@ -555,6 +555,9 @@
     .social-media-section{
         width: 75%;
     }
+    .places, .time1 {
+        font-size: 13px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
@@ -566,5 +569,8 @@
     }
     .address-content{
         font-size: 12px;
+    }
+    .places, .time1 {
+        font-size: 16px;
     }
 }
