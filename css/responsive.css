@@ -540,10 +540,22 @@
     padding: 2px;
     font-size: 12px;
     }
+    .time-content{
+        font-size: 12px;
+    }
+    .address-content{
+        font-size: 12px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
     padding: 12px;
     font-size: 14px;
+    }
+    .time-content{
+        font-size: 12px;
+    }
+    .address-content{
+        font-size: 12px;
     }
 }
