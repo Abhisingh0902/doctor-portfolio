@@ -168,6 +168,7 @@ svg {
 
 .contact-info>div:last-child {
     margin-right: 0;
+    display: none;
 }
 
 .phone p,
