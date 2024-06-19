@@ -572,7 +572,10 @@
     .info-item{
         padding: 1px 9px;
     }
-    
+    .about-section{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
