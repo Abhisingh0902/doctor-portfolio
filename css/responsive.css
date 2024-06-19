@@ -145,6 +145,7 @@
 
     .op-item {
         width: 100%; /* Make items full width on smaller screens */
+        margin-bottom: -10px;
         /* margin-bottom: 20px;  */
     }
 }
