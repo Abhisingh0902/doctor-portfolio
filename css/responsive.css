@@ -68,6 +68,10 @@
     .toggle-bar:hover{
         color: white;
     }
+    .contact-info>div:last-child {
+        margin-right: 0;
+        display: none;
+    }
     
     }
 
