@@ -580,6 +580,9 @@
         display: flex;
         flex-direction: column;
     }
+    .image-section img{
+        bottom: 0px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
@@ -604,5 +607,6 @@
     .about-section-md{
         display: flex;
         flex-direction: column;
+        bottom: 0px;
     }
 }
