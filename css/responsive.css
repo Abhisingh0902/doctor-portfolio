@@ -601,4 +601,8 @@
     .info-item{
         padding: 1px 9px;
     }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+    }
 }
