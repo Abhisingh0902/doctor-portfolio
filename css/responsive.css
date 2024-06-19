@@ -139,7 +139,7 @@
 @media (max-width: 768px) {
     .section-happy {
         flex-direction: column;
-        max-height: 500px; /* Remove maximum height */
+        max-height: 610px; /* Remove maximum height */
         align-items: flex-start; /* Align items to the start */
     }
 
