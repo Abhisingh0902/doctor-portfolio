@@ -308,5 +308,22 @@
       });
   </script>
   
+    <!-- Footer section strat -->
+ 
+    <div id="footerSection"></div>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('footerSection').innerHTML = html;
+        });
+    </script>
+    
+    
+    
+  
+    <!-- Footer sectiuon end -->
+
+
 </body>
 </html>
