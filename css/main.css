@@ -1436,7 +1436,7 @@ text-align: left;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
-    ), url("/image/images-that-simulate-x-rays-with-neon-colors.jpg");
+    ), url("image/images-that-simulate-x-rays-with-neon-colors.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
