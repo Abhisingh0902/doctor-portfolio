@@ -583,6 +583,40 @@
     .image-section img{
         bottom: 0px;
     }
+
+                                                        /* our services */
+    .unique-ourservice-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Add padding for margins */
+    }
+    .unique-ourservice-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .unique-ourservice-col {
+        width: 100%;
+        padding: 10px 15px; /* Add padding for margins */
+    }
+    .unique-img-section {
+        width: 100%;
+    }
+    .unique-ourservice-sidebar {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 15px; /* Add padding for margins */
+    }
+    .unique-ourservice-container {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        margin-top: 20px;
+        padding: 0 15px; /* Add padding for margins */
+    }
+    .unique-ourservice-col2 {
+        width: 100%;
+        position: static;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1221px) {
     .op-navbar li a {
@@ -610,3 +644,62 @@
         bottom: 0px;
     }
 }
+/* *********************************    Our Services ****************** */
+
+@media only screen and (max-width: 768px) {
+    .unique-ourservice-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Add padding for margins */
+    }
+    .unique-ourservice-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .unique-ourservice-col {
+        width: 100%;
+        padding: 10px 15px; /* Add padding for margins */
+    }
+    .unique-img-section {
+        width: 100%;
+    }
+    .unique-ourservice-sidebar {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 15px; /* Add padding for margins */
+    }
+    .unique-ourservice-container {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        margin-top: 20px;
+        padding: 0 15px; /* Add padding for margins */
+    }
+    .unique-ourservice-col2 {
+        width: 100%;
+        position: static;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .unique-ourservice-col h4 {
+        font-size: 1.2rem;
+    }
+    .unique-ourservice-container .unique-contact-text {
+        font-size: 16px;
+    }
+    .unique-ourservice-container .unique-phone-number {
+        font-size: 20px;
+    }
+    .unique-ourservice-container .unique-email {
+        font-size: 16px;
+    }
+    .unique-ourservice-section,
+    .unique-ourservice-row,
+    .unique-ourservice-col,
+    .unique-ourservice-sidebar,
+    .unique-ourservice-container {
+        padding: 0 10px; /* Add padding for margins */
+    }
+}
+
+
