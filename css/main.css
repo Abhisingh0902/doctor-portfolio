@@ -1433,7 +1433,10 @@ text-align: left;
     background-color: #333;
     color: #fff;
     padding: 50px 0;
-    background-image: linear-gradient(to bottom, #35478C, #4E7AC7);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url("/image/images-that-simulate-x-rays-with-neon-colors.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2220,9 +2223,11 @@ color: black;
 }
 .unique-ourservice-col h4 {
     padding: 10px 5px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 10px;
     margin-bottom: 15px;
+    font-weight: bold;
+
 }
 .unique-ourservice-row {
     display: flex;
@@ -2254,14 +2259,14 @@ color: black;
 }
 .unique-ourservice-sidebar {
     width: 350px;
-    padding: 20px;
+    padding: 20px 7px;
     border-radius: 5px;
     color: #fff;
 }
 .unique-ourservice-col2 {
     padding: 12px;
     position: relative;
-    bottom: 600px;
+    bottom: 720px;
 }
 .unique-ourservice-sidebar ul {
     list-style: none;
@@ -2302,10 +2307,13 @@ color: black;
     width: 300px;
     height: 321px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url("image/images-that-simulate-x-rays-with-neon-colors.jpg"); /* Change this to your background image */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url("/image/knee.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -2315,7 +2323,7 @@ color: black;
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 30px;
+    left: 41px;
     bottom: 10px;
 }
 .unique-ourservice-container .unique-overlay {
