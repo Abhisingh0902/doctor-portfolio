@@ -114,7 +114,7 @@
         top: 20px;
     }
      .doctor-info p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-items: center;
     text-align: justify;
     
@@ -281,7 +281,7 @@
     }
     
     .doctor-info2 p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: justify;
     }
     
@@ -301,7 +301,7 @@
     }
     
     .text-section p {
-        font-size: 1.2rem; /* Font size for mobile devices */
+        font-size: 1rem; /* Font size for mobile devices */
         text-align: justify;
     }
     
@@ -316,7 +316,7 @@
     text-align: left;
     }
     .text-content p {
-        font-size: 1.2rem; /* Font size for mobile devices */
+        font-size: 1rem; /* Font size for mobile devices */
         text-align: justify;
         justify-items: center;
         line-height: 1.6;
@@ -335,7 +335,7 @@
         }
     
         .highlight-item p {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
     
         .highlight-item .icon {
