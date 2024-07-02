@@ -733,9 +733,9 @@ footer {
 }
 
 .social-media-section {
-    margin: 10px;
+    margin: -16px;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     /* background-color: rgb(128, 255, 0); */
     width: 50%;
 
