@@ -197,6 +197,40 @@ document.addEventListener('DOMContentLoaded', function () {
 // dropdown icon click js of sidenavbar end 
 
 
+//dropdown icon click js of sidenavbar
+document.querySelectorAll('.dropdown').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isActive = this.classList.contains('active');
+        const submenu = this.nextElementSibling;
+
+        // If the clicked link is already active, remove the active class and hide its submenu
+        if (isActive) {
+            this.classList.remove('active');
+            if (submenu) {
+                submenu.style.maxHeight = null;
+            }
+        } else {
+            // Close all submenus and deactivate all dropdown links except for sub-submenus
+            document.querySelectorAll('.submenu, .sub-submenu').forEach(submenu => {
+                submenu.style.maxHeight = null;
+            });
+            document.querySelectorAll('.dropdown').forEach(link => {
+                if (!link.nextElementSibling || (!link.nextElementSibling.classList.contains('submenu') && !link.nextElementSibling.classList.contains('sub-submenu'))) {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Add active class to the clicked link and display its submenu
+            this.classList.add('active');
+            if (submenu) {
+                submenu.style.maxHeight = submenu.scrollHeight + 'px';
+            }
+        }
+    });
+});
+
+
 //testimonils card slider
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.querySelector('.testimonial-slider');
@@ -257,4 +291,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
    
 // faq dropdown of about doctor page end.
+
+
+// JavaScript for the loader
+//  loader  function  for every page start
+
+  // Simulate content loading
+  window.addEventListener("load", function () {
+    // Hide the loader
+    const loader = document.getElementById("loader");
+    loader.style.opacity = 0;
+    setTimeout(function () {
+      loader.style.display = "none";
+      // Show the main content after hiding loader
+    //   body.style.display = "block";
+    }, 1000); // Adjust the delay as needed
+  });
+// <!-- loader  function  for every page end  -->
+
+
+
 
