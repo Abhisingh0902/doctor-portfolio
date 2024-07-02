@@ -658,6 +658,9 @@ h6 {
 }
 
 /* //footer */
+.para-left{
+    padding-left: 0px !important;
+}
 
 footer {
     background-color: tomato;
@@ -719,7 +722,7 @@ footer {
 }
 
 .our-services-section ul li {
-    text-align: center;
+    text-align: left;
     list-style: none;
 
 }
