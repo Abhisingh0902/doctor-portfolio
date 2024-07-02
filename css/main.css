@@ -1964,10 +1964,12 @@ color: black;
 .controls {
     position: absolute;
     top: 50%;
+    left: 8%;
+    right: 10%;
     transform: translateY(-50%);
     display: flex; /* Added */
     align-items: center; /* Added */
-    width: 100%; /* Added */
+    width: 85%; /* Added */
     justify-content: space-between; /* Added */
     padding: 0 10px; /* Added */
 }

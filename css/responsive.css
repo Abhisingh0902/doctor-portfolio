@@ -565,6 +565,18 @@
         
     }
 
+    .controls{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        display: flex; /* Added */
+        align-items: center; /* Added */
+        width: 100%; /* Added */
+        justify-content: space-between; /* Added */
+        padding: 0 10px; /* Added */
+    }
+
     /* .bold-text {
         font-size: 20px;
         padding: 10px;
@@ -621,6 +633,17 @@
     }
     .image-section img{
         bottom: 0px;
+    }
+
+    .controls{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex; /* Added */
+        align-items: center; /* Added */
+        width: 100%; /* Added */
+        justify-content: space-between; /* Added */
+    padding: 0 10px; /* Added */
     }
 
                                                         /* our services */
