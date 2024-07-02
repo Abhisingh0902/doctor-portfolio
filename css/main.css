@@ -224,6 +224,7 @@ svg {
     /* padding: 5px; */
     padding-top: 5px;
     background-color: orange;
+    height: 60px;
 }
 
 .toggle-bar {
