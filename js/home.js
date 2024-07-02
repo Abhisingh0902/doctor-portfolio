@@ -143,70 +143,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // side navbar js
 
+document.addEventListener('DOMContentLoaded', function () {
+    const bar = document.getElementById('bar');
+    const sidebar = document.getElementById('sidebar');
+    const navClose = document.getElementById('nav-close');
 
+    // Function to open the sidebar
+    function openSidebar() {
+        sidebar.classList.add('show');
+    }
 
-    var bar = document.getElementById('bar');  // Ensure you have an element with id 'bar' for the open toggle
-    var sidebar = document.getElementById('sidebar');
-    var navClose = document.getElementById('nav-close');
+    // Function to close the sidebar
+    function closeSidebar() {
+        sidebar.classList.remove('show');
+    }
 
-    // Function to toggle sidebar visibility
+    // Event listener for the toggle button
     if (bar) {
-        bar.onclick = function(event) {
-            sidebar.style.display = 'block';
+        bar.addEventListener('click', function (event) {
+            openSidebar();
             event.stopPropagation(); // Stop the event from propagating to the document
-        };
+        });
     }
 
-    // Function to hide the sidebar when close icon is clicked
+    // Event listener for the close button
     if (navClose) {
-        navClose.onclick = function(event) {
-            sidebar.style.display = 'none';
+        navClose.addEventListener('click', function (event) {
+            closeSidebar();
             event.stopPropagation(); // Stop the event from propagating to the document
-        };
+        });
     }
 
-    // Function to hide the sidebar when clicking outside of it
-    document.addEventListener('click', function(event) {
-        if (sidebar && navClose) {
-            var isClickInsideSidebar = sidebar.contains(event.target);
-            var isClickInsideToggleIcon = bar.contains(event.target);
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', function (event) {
+        if (sidebar) {
+            const isClickInsideSidebar = sidebar.contains(event.target);
+            const isClickInsideToggleIcon = bar.contains(event.target);
 
             if (!isClickInsideSidebar && !isClickInsideToggleIcon) {
-                sidebar.style.display = 'none';
+                closeSidebar();
             }
         }
     });
 
-//dropdown icon click js of sidenavbar
-document.querySelectorAll('.dropdown').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const isActive = this.classList.contains('active');
-        const submenu = this.nextElementSibling;
-
-        // If the clicked link is already active, remove the active class and hide its submenu
-        if (isActive) {
-            this.classList.remove('active');
-            if (submenu) {
-                submenu.style.maxHeight = null;
-            }
-        } else {
-            // Close all submenus and deactivate all dropdown links except for sub-submenus
-            document.querySelectorAll('.submenu, .sub-submenu').forEach(submenu => {
-                submenu.style.maxHeight = null;
-            });
-            document.querySelectorAll('.dropdown').forEach(link => {
-                if (!link.nextElementSibling || (!link.nextElementSibling.classList.contains('submenu') && !link.nextElementSibling.classList.contains('sub-submenu'))) {
-                    link.classList.remove('active');
-                }
-            });
-
-            // Add active class to the clicked link and display its submenu
-            this.classList.add('active');
-            if (submenu) {
-                submenu.style.maxHeight = submenu.scrollHeight + 'px';
-            }
-        }
+    // Prevent sidebar from closing when clicking inside the sidebar
+    sidebar.addEventListener('click', function (event) {
+        event.stopPropagation();
     });
 });
 

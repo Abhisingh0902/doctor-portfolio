@@ -223,7 +223,7 @@ svg {
 .op-navbar {
     /* padding: 5px; */
     padding-top: 5px;
-    background-color: #99C24D;
+    background-color: orange;
 }
 
 .toggle-bar {
@@ -974,17 +974,20 @@ figure.effect-oscar:hover img {
 
 
  .sidebar {
-    display: none;
+    /* display: none; */
     width: 80%;
     max-width: 250px;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
-    left: 0;
+    left: -250px;
     height: 100%;
     z-index: 1000;
+    transition: ease-in-out 0.5s ;
 }
-
+.sidebar.show{
+    left: 0;
+   }
 
  .sidebar-header {
     width: 100%;
