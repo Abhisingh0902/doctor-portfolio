@@ -2232,7 +2232,7 @@ color: black;
     right: 6%; /* Change from left to right */
     width: 50px; /* Adjust width as needed */
     height: 50px; /* Adjust height as needed */
-    z-index: 1000;
+    z-index: 9999;
     animation: wave 2s infinite;
   }
   
