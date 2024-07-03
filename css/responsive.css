@@ -85,6 +85,7 @@
     .op-navbar{
         width: 100%;
         font-size: 18px;
+        height: 60px;
     }
     .op-navbar ul{
         display: none;
@@ -590,11 +591,14 @@
 
 /* static banner end */
 
-/* ************************************* Nav bar in mobie destep views    *******************/
+/* ************************************* Nav bar in mobie desktep views    *******************/
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     .op-navbar li a {
     padding: 2px;
     font-size: 12px;
+    }
+    .op-navbar{
+        height: 40px;
     }
     .time-content{
         font-size: 12px;
@@ -634,16 +638,17 @@
     .image-section img{
         bottom: 0px;
     }
-
-    .controls{
+    .controls {
         position: absolute;
         top: 50%;
+        left: 0%;
+        right: 0%;
         transform: translateY(-50%);
-        display: flex; /* Added */
-        align-items: center; /* Added */
-        width: 100%; /* Added */
-        justify-content: space-between; /* Added */
-    padding: 0 10px; /* Added */
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 10px;
     }
 
                                                         /* our services */
